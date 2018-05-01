@@ -1,0 +1,11 @@
+/Users/leejinam/Study/TodoApi/bin/Debug/netcoreapp2.0/TodoApi.deps.json
+/Users/leejinam/Study/TodoApi/bin/Debug/netcoreapp2.0/TodoApi.runtimeconfig.json
+/Users/leejinam/Study/TodoApi/bin/Debug/netcoreapp2.0/TodoApi.runtimeconfig.dev.json
+/Users/leejinam/Study/TodoApi/bin/Debug/netcoreapp2.0/TodoApi.dll
+/Users/leejinam/Study/TodoApi/bin/Debug/netcoreapp2.0/TodoApi.pdb
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.csprojResolveAssemblyReference.cache
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.csproj.CoreCompileInputs.cache
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.AssemblyInfoInputs.cache
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.AssemblyInfo.cs
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.dll
+/Users/leejinam/Study/TodoApi/obj/Debug/netcoreapp2.0/TodoApi.pdb
