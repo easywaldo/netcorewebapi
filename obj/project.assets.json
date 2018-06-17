@@ -12544,13 +12544,13 @@
       "projectName": "TodoApi",
       "projectPath": "/Users/leejinam/Study/TodoApi/TodoApi.csproj",
       "packagesPath": "/Users/leejinam/.nuget/packages/",
-      "outputPath": "/Users/leejinam/Study/TodoApi/obj",
+      "outputPath": "/Users/leejinam/Study/TodoApi/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/leejinam/.config/NuGet/NuGet.Config"
+        "/Users/leejinam/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12572,15 +12572,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.3"
+            "version": "[2.0.3, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

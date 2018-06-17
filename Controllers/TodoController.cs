@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TodoApi.Models;
 using System.Linq;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TodoApi.Controllers
 {
@@ -34,7 +35,8 @@ namespace TodoApi.Controllers
         [HttpGet("{id}", Name = "GetToDo")]
         [Route("getbyid/{id}")]
         public IActionResult GetById(long id)
-        {            var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+        {            
+            var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
             if (item == null)
             {
                 return NotFound();
@@ -44,11 +46,21 @@ namespace TodoApi.Controllers
         }
 
         [HttpPost]
+        [Route("create")]
         public IActionResult Create([FromBody] TodoItem item)
         {
             if (item == null)
             {
                 return BadRequest();
+            }
+
+            ValidationContext context = new ValidationContext(item, null, null);
+            List<ValidationResult> results = new List<ValidationResult>();
+            bool valid = Validator.TryValidateObject(item, context, results, true);
+
+            if (valid == false)
+            {
+                return new JsonResult(results);
             }
 
             _context.TodoItems.Add(item);
